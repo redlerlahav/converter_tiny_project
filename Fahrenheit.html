@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="converter.css">
+    <script src="conversionFormulas.js"></script>
+</head>
+<body>
+
+    <h1 align="center">Fahrenheit <--> Celsius Converter </h1>
+    <h2 align="center"> Please choose which one you want to convert... </h2>
+    <div class="menu-wrap">
+        <nav class="menu">
+            <ul class="clearfix">
+                <li><a href="simpleConverter.html">Home</a></li>
+                <li>
+                    <a href="#">Converters <span class="arrow">&#9660;</span></a>
+
+                    <ul class="sub-menu">
+                        <li><a href="Fahrenheit.html">Ferenhight <--> Celsius </a></li>
+                        <li><a href="Inch.html">Inch <--> Centimeters </a></li>
+                        <li><a href="Miles.html">Miles <--> Kilometers </a></li>
+                        <li><a href="Pounds.html">Pounds <--> Kilograms</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+
+
+    <br/>
+    <br/>
+    <div class = "form">
+        <form name = "fahrenheitForm">
+            <br/>
+            Fahrenheit: <input  type="text" name="fahrenheitAnswer" onkeyup="fahrenheitToCelsius(this.value)"/>
+            =
+            <input  type="text" name="celsiusAnswer" onkeyup="celsiusToFahrenheit(this.value)"/> Celsius
+            <!--<br/>Celsius: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="" e="text" name="celsiusAnswer" onkeyup="celsiusToFahrenheit(this.value)"/>-->
+        </form>
+    </div>
+
+
+</body>
+</html>
